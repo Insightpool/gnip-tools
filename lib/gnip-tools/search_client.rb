@@ -8,16 +8,16 @@ module GnipTools
     end
 
     def search(url, query)
-      #begin
+      begin
         response = RestClient::Request.execute(method: :get, url: url, user: @username, password: @password,
                                                headers: { params: query })
 
         JSON.parse(response)
 
-      #rescue Exception => eV
-        #puts e.message
-        #send_error(e.message)
-      #end
+      rescue Exception => e
+        puts e.message
+        send_error(e.message)
+      end
     end
   end
 end
