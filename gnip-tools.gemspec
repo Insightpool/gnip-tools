@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'gnip-tools'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2016-03-07'
   s.summary     = "GNIP API Support!"
   s.authors     = ["Justin Moulton"]
